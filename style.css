@@ -1,0 +1,263 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
+
+:root {
+  --primaryColor: #0e76bd;
+  --secundaryColor: #c04d21;
+  --thirdColor: #d6d6d6;
+  --fourthColor: #ffffff;
+  --fiveColor: #000000;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+/*  NAVIGATIE MENIU  */
+
+.imagine-logo {
+  width: 12em;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28192, 77, 33, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+.navbar-toggler {
+  border: 2px solid var(--secundaryColor);
+}
+
+.navbar-toggler:focus {
+  box-shadow: 0 0 0 var(--secundaryColor);
+}
+
+nav {
+  background-color: var(--fourthColor);
+}
+
+.nav-link,
+.dropdown-item {
+  color: var(--fiveColor);
+  font-weight: 500;
+}
+
+.nav-link:hover,
+.dropdown-item:hover {
+  color: var(--secundaryColor);
+}
+
+/*  CAROUSEL SLIDE-HERO  */
+
+.imagine-slide {
+  height: 50%;
+}
+
+.carousel-item::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: "";
+  background-color: rgba(14, 118, 189, 1);
+  opacity: 0.5;
+}
+
+.buton-slide {
+  border: 2px solid var(--secundaryColor);
+  padding: 0.8em 1.2em;
+  color: var(--fourthColor);
+  font-size: 1.2em;
+}
+
+.buton-slide a {
+  text-decoration: none;
+  color: var(--fourthColor);
+  font-weight: 500;
+}
+
+.buton-slide:hover {
+  background-color: var(--secundaryColor);
+  transition: ease 0.8s;
+}
+
+.titlu-slide {
+  font-size: 4.7em;
+  font-weight: 500;
+}
+
+.text-slide {
+  font-size: 1.4em;
+}
+
+
+.cutie-echipa-tanara {
+  background-color: var(--thirdColor);
+}
+
+.fraza-slogan {
+  font-size: 30px;
+}
+
+.decoration {
+  height: 2px;
+  background-color: var(--secundaryColor);
+  border: none;
+  width: 13em;
+  filter: none;
+  opacity: 1;
+}
+
+.slogan-mic {
+  color: var(--primaryColor);
+}
+
+.buton-pagina {
+  background-color: var(--secundaryColor);
+  text-decoration: none;
+  color: var(--fourthColor);
+  padding: 0.6em 1em;
+  font-size: 1em;
+}
+
+.buton-pagina:hover {
+  background-color: var(--secundaryColor);
+  color: var(--fourthColor);
+}
+
+@media (max-width: 604px) {
+  iframe {
+    width: 500px;
+  }
+}
+
+@media (max-width: 540px) {
+  iframe {
+    width: 420px;
+  }
+}
+
+@media (max-width: 463px) {
+  iframe {
+    width: 380px;
+  }
+}
+
+@media (max-width: 420px) {
+  iframe {
+    width: 340px;
+  }
+}
+
+@media (max-width: 383px) {
+  iframe {
+    width: 290px;
+  }
+}
+
+@media (max-width: 320px) {
+  iframe {
+    width: 260px;
+  }
+}
+
+/*  SERVICIILE PE CARE LE OFERIM  */
+
+.serviciile-oferite {
+  background-image: url("assets/img/bg-services.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-color: rgba(14, 118, 189, 1);
+}
+
+.munca-noastra {
+  font-size: 40px;
+  text-shadow: 1px 1px 2px rgb(71, 71, 71), 0 0 1em blue, 0 0 0.2em blue;
+  color: var(--fourthColor);
+}
+
+.link-spre a {
+  text-decoration: none;
+  color: var(--fourthColor);
+}
+.caseta:hover {
+  background-color: var(--primaryColor);
+}
+
+.caseta {
+  background-color: var(--secundaryColor);
+}
+
+/*  ITI ASIGURAM CONDITIILE PENTRU CONSTATARI  */
+
+.cutie-constatari {
+  background: linear-gradient(
+    295deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(14, 118, 189, 1) 80%,
+    rgba(14, 118, 189, 1) 100%,
+    rgba(14, 118, 189, 1) 100%
+  );
+}
+
+.stil-text-constatari {
+  color: var(--secundaryColor);
+}
+
+/*  TESTIMONIALE  */
+
+.testimoniale {
+  background-color: var(--thirdColor);
+  height: 100%;
+}
+
+.testimonial-box img {
+  border-radius: 50%;
+  width: 8em;
+  margin-top: 1.5em;
+}
+
+.testimonial-continut {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/*  FOOTER  */
+
+.footer {
+  background-color: var(--primaryColor);
+}
+
+.iconita {
+  color: var(--fourthColor);
+  font-size: 1em;
+  padding-right: 0.4em;
+}
+
+.text-tel-locatie {
+  font-size: 20px;
+}
+
+.text-tel-locatie,
+.titluri,
+.uni-decoratie,
+.continut-footer,
+.continut-footer a,
+.decoration-white {
+  color: var(--fourthColor);
+}
+
+.continut-footer a {
+  text-decoration: none;
+}
+
+.uni-decoratie {
+  height: 3px;
+  width: 9em;
+}
+
+.fundal {
+  background-color: var(--primaryColor);
+}
+
+/*  END---PAGINA HOME  */
