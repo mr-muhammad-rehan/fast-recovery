@@ -88,7 +88,6 @@ nav {
   font-size: 1.4em;
 }
 
-
 .cutie-echipa-tanara {
   background-color: var(--thirdColor);
 }
@@ -260,4 +259,72 @@ nav {
   background-color: var(--primaryColor);
 }
 
-/*  END---PAGINA HOME  */
+@media (max-width: 576px) {
+  .btn-outline.buton-slide {
+    font-size: 1.25rem;
+    padding: 0.25rem 0.5rem;
+  }
+
+  .btn-outline.buton-slide a {
+    font-size: 1.25rem;
+  }
+}
+
+.service-icon {
+  font-size: 40px;
+  color: #007bff;
+}
+.service-card {
+  text-align: center;
+  padding: 20px;
+}
+.service-card h5 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.service-card p {
+  margin-bottom: 0;
+}
+
+
+.separator {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.separator::before,
+.separator::after {
+  content: '';
+  flex: 1;
+  border-bottom: 1px solid #000;
+}
+
+.separator:not(:empty)::before {
+  margin-right: 1.25em;
+}
+
+.separator:not(:empty)::after {
+  margin-left: 1.25em;
+}
+
+.floating-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+.floating-btn a {
+  color: white;
+  text-decoration: none;
+}
+
+.whatsapp-image{
+  width: 120px;
+}
+
+@media (max-width: 576px) {
+  .whatsapp-image{
+    width: 80px;
+  }
+}
