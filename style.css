@@ -57,7 +57,6 @@ nav {
   width: 100%;
   height: 100%;
   content: "";
-  background-color: rgba(14, 118, 189, 1);
   opacity: 0.5;
 }
 
@@ -82,6 +81,7 @@ nav {
 .titlu-slide {
   font-size: 4.7em;
   font-weight: 500;
+  text-shadow: 2px 2px 4px hsla(0, 0%, 0%, 0.753);  
 }
 
 .text-slide {
@@ -326,5 +326,57 @@ nav {
 @media (max-width: 576px) {
   .whatsapp-image{
     width: 80px;
+  }
+}
+
+
+.review-card {
+  border: 1px solid #e1e1e1;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px;
+  background-color: #fff;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.review-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+}
+.review-card .profile-img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.review-card .profile-img img {
+  width: 100%;
+  height: auto;
+}
+.review-card .review-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.review-card .user-info {
+  margin-left: 15px;
+}
+.review-card .user-name {
+  font-weight: bold;
+  margin: 0;
+}
+.review-card .review-date {
+  font-size: 0.9rem;
+  color: #777;
+}
+.review-card .review-rating i {
+  color: #ffc107;
+}
+.review-card .review-content {
+  margin-top: 15px;
+}
+@media (max-width: 767px) {
+  .col-md-4 {
+      margin-bottom: 30px;
   }
 }
