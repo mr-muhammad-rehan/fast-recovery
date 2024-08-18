@@ -60,6 +60,10 @@ nav {
   opacity: 0.5;
 }
 
+.carousel-button {
+  background-color: var(--secundaryColor);
+}
+
 .buton-slide {
   border: 2px solid var(--secundaryColor);
   padding: 0.8em 1.2em;
@@ -74,14 +78,15 @@ nav {
 }
 
 .buton-slide:hover {
-  background-color: var(--secundaryColor);
+  background-color: none;
+  border: 2px solid var(--secundaryColor);
   transition: ease 0.8s;
 }
 
 .titlu-slide {
   font-size: 4.7em;
   font-weight: 500;
-  text-shadow: 2px 2px 4px hsla(0, 0%, 0%, 0.753);  
+  text-shadow: 2px 2px 4px hsla(0, 0%, 0%, 0.753);
 }
 
 .text-slide {
@@ -286,7 +291,6 @@ nav {
   margin-bottom: 0;
 }
 
-
 .separator {
   display: flex;
   align-items: center;
@@ -295,7 +299,7 @@ nav {
 
 .separator::before,
 .separator::after {
-  content: '';
+  content: "";
   flex: 1;
   border-bottom: 1px solid #000;
 }
@@ -319,16 +323,15 @@ nav {
   text-decoration: none;
 }
 
-.whatsapp-image{
+.whatsapp-image {
   width: 120px;
 }
 
 @media (max-width: 576px) {
-  .whatsapp-image{
+  .whatsapp-image {
     width: 80px;
   }
 }
-
 
 .review-card {
   border: 1px solid #e1e1e1;
@@ -377,6 +380,6 @@ nav {
 }
 @media (max-width: 767px) {
   .col-md-4 {
-      margin-bottom: 30px;
+    margin-bottom: 30px;
   }
 }
